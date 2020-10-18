@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Exp6</title>
+</head>
+<body style="margin: 30px;">
+    <div class="container">
+        <form action="/" method="get">
+            <fieldset>
+                <legend>User Name</legend>
+                <input type="text" class="form-control" id="username" required>
+                <legend>Gender</legend>
+                <input type="text" class="form-control" id="gender" required>
+                <legend>Email</legend>
+                <input type="email" class="form-control" id="email" required>
+                <legend>Contact</legend>
+                <input type="number" class="form-control" id="contact" required>
+                <br>
+                <div>
+                    <button type="button" id="insert" class="btn btn-success">Insert</button>
+                    <button type="button" id="create" class="btn btn-success">Create Table</button>
+                    <button type="button" id="remove" class="btn btn-danger">Delete Table</button>
+                    <button type="button" id="deleteRow" class="btn btn-danger">Delete User</button>
+                    <button type="button" id="list" class="btn btn-success">Fetch Details</button>
+                </div>
+                <br>
+                <div id="delete" style="display: none;">
+                    <legend>Enter the ID of the User to be removed</legend>
+                    <input type="number" id="delid">
+                    <button type="button" id="del" class="btn btn-danger">delete</button>
+                </div>
+            </fieldset>
+        </form>
+
+        <hr>
+        <h4>Record</h4>
+        <table class="table table-bordered table-hover" id="userList">
+
+        </table>
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
